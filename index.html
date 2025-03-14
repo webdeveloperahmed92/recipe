@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+
+
+       
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card-container{
+    width: 30%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px -5px rgb(46, 46, 46);
+    }
+
+    h2{
+        text-align: center;
+    }
+    img {
+  width: 100%; /* Set your preferred div size */
+  height: 200px;
+  overflow: hidden; /* Prevents overflow */
+  object-fit:cover;
+  border-radius: 20px;
+}
+
+span{
+    color: rgb(5, 4, 4);
+    font-weight: bolder;
+}
+
+p{
+    color: rgb(71, 71, 71);
+    margin-bottom: -5px;
+}
+
+</style>
+
+</head>
+<body>
+    
+
+    <div class="filter">
+    <Label>Catogaries:- Easy</Label>
+    <input type="radio" name="option"  onchange="changeEasy()">
+
+    <Label>| Medium</Label>
+    <input type="radio"  name="option" onchange="changeMedium()">
+
+    <Label>| All </Label>
+    <input type="radio"  name="option" onchange="selectAll()">
+    </div>
+
+
+
+
+    <div class="container">
+
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
